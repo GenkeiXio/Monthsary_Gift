@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOVE</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+
+    <div class="title">Happy 1st Month Anniversary</div>
+
+    <div class="container">
+      <a href="new.html" class="coll">
+          <h2>My Love💖<br>
+          I have something special for you. 
+          Tap to see the 1st Letter! ✨</h2>
+      </a>
+      <a href="2ndletter.html" class="coll">
+        <h2>My Love. 💖<br>
+        I have something special for you. 
+        Tap to see the 2nd Letter! ✨</h2>
+      </a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/3.0.0/draggabilly.pkgd.min.js"
+      integrity="sha512-hbEWVzVt2yK7kQmJ1NZirxxO0NPtE4W09fT4f9Emem/n0rMPFHlLbuLcUcLNrtUGWGoQ8qGvKDVJnRRuCzjeZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      document.querySelectorAll('.coll').forEach(item => {
+        new Draggabilly(item);
+      });
+    </script>
+
+  </body>
+</html>
