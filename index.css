@@ -1,15 +1,17 @@
-/* Romantic gradient background */
-body {
+/* Prevent scrolling in all directions */
+html, body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevents all scrolling */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: hidden; /* Prevent scrolling */
   background: linear-gradient(to bottom, #ffafbd, #ffc3a0); /* Soft pink & peach */
   font-family: "Playfair Display", serif; /* Romantic and elegant */
+  box-sizing: border-box; /* Ensures no extra spacing issues */
 }
 
 /* Anniversary title */
@@ -18,11 +20,11 @@ body {
   font-weight: bold;
   color: white;
   text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.8);
-  margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Centered content */
+/* Centered container */
 .container {
   display: flex;
   flex-direction: column; /* Stack items vertically */
